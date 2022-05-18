@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    font-family: 'Montserrat';
+    background: black;
+    color: white;
+   
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    /*z-index: -1;*/
+  }
+  
+  .nav {
+    /*position: fixed;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    
+  }
+  
+  .border-bottom {
+    position: absolute;
+    top: 100px;
+    width: 0%;
+    z-index: 1;
+    border-color: rgba(255,255,255, .2);
+    border-width: .5px;
+  }
+  
+  .logo,
+  .menu-links,
+  .search,
+  .cart {
+    position: absolute;
+    padding: 20px;
+  }
+
+
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .menu-links {
+    left: 100px;
+    line-height: 1;
+    margin-left: 30px;
+  }
+  
+  .menu-links ul li {
+    display: inline-block;
+    padding: 20px 30px;
+    color: rgba(255,255,255, .5);
+  }
+  
+  .search,
+  .cart {
+    line-height: 3;
+    font-size: 20px;
+  }
+  
+  .search {
+    right: 150px;
+  }
+  
+  .cart {
+    right: 50px;
+  }
+
+  .header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 87%;
+    margin: 0 auto;
+    grid-template-columns: 60% 40%;
+    padding: 70px 0;
+  }
+
+  .text{
+    border: 1px solid red;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  .header-img-container{
+   max-width: 100%;
+   height: auto;
+  }
+
+  .header-img{
+    max-width: 100%;
+    transform-origin: right;
+  }
+
+  .subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .subtitle::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid #fff;
+    width: 80px;
+    margin: 0 10px 0 0;
+    transform: translateY(-4px);
+  }
+  
+  .title {
+    font-size: 120px;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap
+  }
+  
+  .desc {
+    color: rgba(255,255,255, .5);
+    margin-top: 40px;
+    line-height: 2;
+  }
+  
+  .readmore {
+    display: inline-block;
+    margin-top: 80px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    font-weight: bolder;
+  }
+
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    z-index: 2;
+    background: #bd1f1f;
+  }
+  
+  .first {
+    top: 0;
+  }
+  
+  .second {
+    top: 33.3%
+  }
+  
+  .third {
+    top: 66.6%;
+  }
+  
+ /*New Arrivals*/
+section{
+  background: white;
+  color: black;
+  padding: 70px 0;
+}
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.new-arrivals-grid{
+  display: grid;
+  max-width: 85%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.new-arrivals-item{
+  max-width: 100%;
+}
+
+.new-arrivals-item img{
+  max-width: 100%;
+}
+
+.shoe-name{
+  text-align: center;
+}
+
+/*Brand Section*/ 
+.brand-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100%;
+}
+
+.brand-item img{
+  max-width: 100%;
+}
+
+.brand-item-content-container{
+  background: rgb(247, 247, 247);
+  position: relative;
+}
+
+.brand-item-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.brand-name{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.brand-item-content button{
+  background: #dd2020;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  color: white;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+/*Locations Section*/
+.locations-grid{
+  max-width: 87%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.location-img-container{
+  max-width: 100%;
+  position: relative;
+}
+
+.location-img-container::after{
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.location-img-container img{
+  max-width: 100%;
+  display: block;
+}
+
+
+
+.manhattan, .brooklyn{
+  overflow: hidden;
+}
+.location-img-container span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  font-weight: bold;
+  font-size: 28px;
+  z-index: 5;
+}
+
+
+/*Footer*/
+footer{
+  background: black;
+  min-height: 50vh;
+}
+  @media(max-width: 1200px){
+    body{
+      border: 3px solid purple;
+    }
+
+    .title {
+      font-size: 90px;
+    }
+  }
+
+  @media(max-width: 1024px){
+    body{
+      border: 3px solid greenyellow;
+    }
+
+    .header{
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+
+    .new-arrivals-grid{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media(max-width: 768px){
+    body{
+      border: 3px solid red;
+    }
+
+    .title {
+      font-size: 70px;
+    }
+
+    .new-arrivals-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media(max-width: 600p){
+    body{
+      border: 3px solid orange;
+    }
+  }
