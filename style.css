@@ -390,6 +390,7 @@ footer{
 
     .brand-section{
       padding-top: 0px !important;
+      background: red;
     }
 
     .brand-item, .locations-grid{
