@@ -355,9 +355,9 @@ footer{
   }
 
   @media(max-width: 600px){
-    body{
+    /*body{
       border: 3px solid orange;
-    }
+    }*/
 
     .logo {
       width: 40px;
