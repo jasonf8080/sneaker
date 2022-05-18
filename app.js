@@ -13,6 +13,8 @@ const img1Width = img1.getBoundingClientRect().width;
 const subtitle = document.querySelector('.subtitle');
 const desc = document.querySelector('.desc');
 const readmore = document.querySelector('.readmore');
+const borderBottom = document.querySelector('.border-bottom');
+console.log(borderBottom)
 
 
 gsap.set('.logo', {transformOrigin: 'center'})
@@ -21,6 +23,7 @@ tl.fromTo('.overlay', {x: 0}, {x: '-100%', duration: 0.7, stagger: 0.3});
 tl.fromTo('.logo', {scale: 0}, {scale: 1, duration: 1, ease: "elastic.out(1, 0.3)"});
 tl.fromTo('.menu-links ul li', {opacity: 0}, {opacity: 1, duration: 0.5, stagger: 0.2}, '<')
 tl.fromTo('.nav i', {opacity: 0}, {opacity: 1, duration: 1, stagger: 0.2}, '<70%');
+tl.fromTo('.border-bottom', {opacity: 0}, {opacity: 1, duration: 0.5}, '<50%')
 tl.fromTo(title, {width: 0}, {width: `${titleFullWidth}px`, duration: 0.7}, '<')
 
 tl.fromTo(img1, {opacity: 0, x: 200}, {opacity: 1, x: 0, duration: 0.7},'<')
@@ -33,15 +36,33 @@ tl.fromTo(readmore, {opacity: 0, x:'-200px'}, {opacity: 1, x:0, duration: 0.5}, 
 
 
 
+////*Fixed Nav*/////
+const nav = document.querySelector('.nav');
+const navHeight = nav.getBoundingClientRect().height;
+
+window.addEventListener('scroll', () => {
+    console.log(navHeight);
+    console.log(window.pageYOffset);
+    if(window.pageYOffset > navHeight){
+        nav.style.position = 'fixed';
+    } else {
+        nav.style.position = 'relative';
+    }
+})
+
+/////Toggle Links
+const menuIcon = document.querySelector('.menu-icon');
+const menuLinks = document.querySelector('.menu-links');
+
+menuIcon.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+})
 
 
 
 
 
-
-
-
-/*Dynamically Add Sneakers*/
+/////*Dynamically Add Sneakers*/
 const sneakersGrid = document.querySelector('.new-arrivals-grid');
 
 const addSneakers = () => {
@@ -61,7 +82,7 @@ const addSneakers = () => {
     const tl2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.new-arrivals',
-            start: '-50%', 
+            start: '-60%', 
             end: '20%',
             scrub: true,
         }
@@ -77,11 +98,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-/*Page 3 Animations*/
+///////*Page 3 Animations*/
 const tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: '.brands-section',
-        start: '-8%',
+        start: '-10%',
         //markers: {startColor: 'orange', endColor: 'orange'},
         }
     })
@@ -100,20 +121,19 @@ tl3.fromTo('.brand-item4 .brand-item-content', {opacity: 0, y:'50px'}, {opacity:
 
 
 
-/*Page 4 Animations*/
+///////*Page 4 Animations*/
 const location1 = document.querySelector('.manhattan');
 const location2 = document.querySelector('.brooklyn');
 
 const location1Width = location1.getBoundingClientRect().width;
 const location2Width = location2.getBoundingClientRect().width;
 
-console.log(location1Width)
-console.log(location2Width)
+
 
 const tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: '.locations',
-        start: '-20%',
+        start: '-23%',
         end: '100%',
         //markers: {startColor: 'brown', endColor: 'brown'},
     }
