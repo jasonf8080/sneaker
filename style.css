@@ -352,9 +352,9 @@ footer{
       left: -100%;
       min-height: 100vh;
       background: #bd1f1f;
-      max-width: 40vw;
-      min-width: 40vw;
-      z-index: 99;
+      max-width: 50vw;
+      min-width: 50vw;
+      z-index: 999;
       display: flex;
       flex-direction: column;
       align-items: center;
