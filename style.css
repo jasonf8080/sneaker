@@ -200,6 +200,8 @@ section{
 
 .shoe-name{
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /*Brand Section*/ 
