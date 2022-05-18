@@ -365,6 +365,14 @@ footer{
       font-size: 40px;
     } 
 
+    .desc {
+      margin-top: 30px;
+    }
+    
+    .readmore {
+      margin-top: 30px;
+    }
+
     .brand-section{
       padding-top: 0px !important;
     }
