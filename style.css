@@ -244,6 +244,12 @@ section{
   text-transform: uppercase;
 }
 
+
+.brand-item-content-container{
+  border: 2px solid green;
+  padding: 100px 0;
+}
+
 /*Locations Section*/
 .locations-grid{
   max-width: 87%;
@@ -332,6 +338,10 @@ footer{
       font-size: 70px;
     }
 
+    .heading{
+      font-size: 22px;
+    }
+
     .new-arrivals-grid{
       grid-template-columns: repeat(2, 1fr);
     }
@@ -355,6 +365,10 @@ footer{
       grid-template-columns: 1fr;
     }
 
+    .right-img, .left-img{
+      order: -1;
+    }
+
     .header-img-container{
       max-width: 100%;
     
@@ -364,4 +378,6 @@ footer{
       object-fit: cover;
       max-height: 300px;
      }
+
+     
   }
