@@ -91,7 +91,6 @@
   }
 
   .text{
-    border: 1px solid red;
     max-width: 100%;
     overflow: hidden;
   }
@@ -331,6 +330,10 @@ footer{
   @media(max-width: 768px){
     body{
       border: 3px solid red;
+    }
+
+    .menu-links ul li{
+      display: none;
     }
 
     .title {
