@@ -388,9 +388,9 @@ footer{
       margin-top: 30px;
     }
 
-    .brand-section{
+    .brands-section{
       padding-top: 0px !important;
-      background: red;
+      padding-bottom: 0px !important;
     }
 
     .brand-item, .locations-grid{
