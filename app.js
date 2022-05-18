@@ -61,7 +61,7 @@ const addSneakers = () => {
     const tl2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.new-arrivals',
-            start: '-70%', 
+            start: '-50%', 
             end: '20%',
             scrub: true,
         }
