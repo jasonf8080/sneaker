@@ -314,9 +314,77 @@ z-index: -1;
 
 /*Footer*/
 footer{
-  background: black;
-  min-height: 50vh;
+  padding: 70px 0;
+  text-transform: uppercase;
 }
+
+
+
+.footer, .copyright{
+  background: black;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-list{
+ 
+  margin-bottom: 20px;
+}
+
+.footer-list li{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subscribe-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-input-container{
+  border: 1px solid white;
+  max-width: 300px;
+  min-width: 300px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-input-container input{
+  flex-basis: 85%;
+  background: black;
+  padding: 10px;
+}
+
+.subscribe-input-container button{
+  background: white;
+  flex-basis: 15%;
+  border: none;
+}
+
+
+
+.subscribe-input-container input::placeholder{
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+}
+
+
+.copyright{
+  padding-bottom: 30px;
+}
+
+.copyright i{
+  font-size: 30px;
+  margin-right: 12px;
+}
+
   @media(max-width: 1200px){
     body{
       border: 3px solid purple;
@@ -339,6 +407,11 @@ footer{
 
     .new-arrivals-grid{
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer, .copyright{
+      background: black;
+      max-width: 600px;
     }
   }
 
@@ -391,6 +464,13 @@ footer{
     .new-arrivals-grid{
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer, .copyright{
+      background: black;
+      max-width: 550px;
+    }
+
+  
   }
 
   @media(max-width: 600px){
@@ -409,6 +489,10 @@ footer{
     .header-img-container img{
       object-fit: cover;
       max-height: 250px;
+    }
+
+    .header-img-container{
+      max-width: 100%;
     }
  
     section{
@@ -445,9 +529,14 @@ footer{
       order: -1;
     }
 
-    .header-img-container{
-      max-width: 100%;
-    
+     .footer, .copyright{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .socials-list{
+       margin-bottom: 35px;
      }
  
   }
