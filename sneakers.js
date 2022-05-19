@@ -16,12 +16,12 @@ export const sneakers = [
 
     {
         image: './img/sneaker4.png',
-        shoe: 'Yeezy Slide'
+        shoe: 'Yeezy 350'
     },
 
     {
         image: './img/sneaker5.png',
-        shoe: 'Jordan 4'
+        shoe: 'Nike Vapormax'
     },
 
     {
@@ -36,12 +36,12 @@ export const sneakers = [
 
     {
         image: './img/sneaker8.png',
-        shoe: 'Yeezy 350'
+        shoe: 'Jordan 4'
     },
 
     {
         image: './img/sneaker9.png',
-        shoe: 'Nike Vapormax'
+        shoe: 'Yeezy 350'
     },
 
     {
