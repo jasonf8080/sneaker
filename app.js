@@ -1,21 +1,18 @@
 import { sneakers } from "./sneakers.js";
 
-/////*GSAP Animations*//////
+/////GSAP Animations//////
 
-/*Header Animations*/
+//Header Animations
 const tl = gsap.timeline();
 const title = document.querySelector('.title');
 const titleFullWidth = title.getBoundingClientRect().width;
 
 const img1 = document.querySelector('.header-img');
-const img1Width = img1.getBoundingClientRect().width;
 
 const subtitle = document.querySelector('.subtitle');
 const desc = document.querySelector('.desc');
 const readmore = document.querySelector('.readmore');
 const borderBottom = document.querySelector('.border-bottom');
-console.log(borderBottom)
-
 
 gsap.set('.logo', {transformOrigin: 'center'})
 
@@ -36,7 +33,7 @@ tl.fromTo(readmore, {opacity: 0, x:'-200px'}, {opacity: 1, x:0, duration: 0.5}, 
 
 
 
-////*Fixed Nav*/////
+////Navigation/////
 const nav = document.querySelector('.nav');
 const navHeight = nav.getBoundingClientRect().height;
 
@@ -50,7 +47,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-/////Toggle Links
+//Toggle Links
 const menuIcon = document.querySelector('.menu-icon');
 const menuLinks = document.querySelector('.menu-links');
 
@@ -62,7 +59,7 @@ menuIcon.addEventListener('click', () => {
 
 
 
-/////*Dynamically Add Sneakers*/
+/////Dynamically Add Sneakers//////
 const sneakersGrid = document.querySelector('.new-arrivals-grid');
 
 const addSneakers = () => {
@@ -78,7 +75,7 @@ const addSneakers = () => {
 
     sneakersGrid.innerHTML = newSneakers;
 
-    /*Page 2 Animations*/
+    //Page 2 Animations
     const tl2 = gsap.timeline({
         scrollTrigger: {
             trigger: '.new-arrivals',
@@ -98,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-///////*Page 3 Animations*/
+//////Page 3 Animations/////
 const tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: '.brands-section',
@@ -121,7 +118,7 @@ tl3.fromTo('.brand-item4 .brand-item-content', {opacity: 0, y:'50px'}, {opacity:
 
 
 
-///////*Page 4 Animations*/
+///////Page 4 Animations////
 const location1 = document.querySelector('.manhattan');
 const location2 = document.querySelector('.brooklyn');
 
