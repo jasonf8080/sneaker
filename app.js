@@ -130,7 +130,7 @@ const location2Width = location2.getBoundingClientRect().width;
 const tl4 = gsap.timeline({
     scrollTrigger: {
         trigger: '.locations',
-        start: '-25%',
+        start: '-28%',
         end: '100%',
         //markers: {startColor: 'brown', endColor: 'brown'},
     }
